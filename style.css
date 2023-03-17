@@ -1,0 +1,160 @@
+/* ROOT */
+
+*, ::after, ::before {
+    box-sizing: border-box
+}
+*, p{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #f4f6f6;
+    --black: #010111;
+    --primary: var(--black);
+    --bg: var(--white);
+}
+
+html {
+    background-color: var(--bg);
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--primary)
+}
+
+/* UTILITY CLASSES, ATOMS...*/
+figure, body, p {
+    margin: 0;
+}
+.container{
+    max-width: 120rem;
+    margin: 2rem 2rem;
+}
+p{
+    max-width: 40em;
+}
+img {
+    max-width: 100%;
+    aspect-ratio: 8/5;
+    object-fit: cover;
+}
+.hamburger {
+    display: none;
+}
+/* HEADER */
+header a{
+    color: var(--black);
+}
+header a::after {
+    width: #000 30%;
+}
+.content{
+    text-align: center;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a,
+.logo {
+    text-decoration: none;
+    margin: 1rem 2rem;
+}
+.hamburger {
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    padding: 0.2rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon span {
+    display: block;
+    width: .8rem;
+    height: 2px;
+    color: var(--black);
+}
+/* MAIN */
+.intro {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+.intro .content h1 {
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* FOOTER */
+
+/* BREAKPOINTS */
+@media(max-width:750px){
+    .icon span{
+        display: block;
+        width: 15px;
+        height: 2px;
+        margin: 2px auto;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        background-color: black;
+      }
+    .hamburger {
+        display: inline;
+        display: flex;
+        gap: 1rem;
+    }
+    nav ul,
+    nav ul li a {
+        display: block;
+        margin: 1rem 0;
+        padding: 0;
+    }
+    nav ul {
+        text-align: start;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    nav {
+        margin-top: -150%;
+    }
+    nav.dropdown {
+        margin-top: 0;
+    }
+
+    .intro .content {
+        text-align: start;
+    }
+    .subtitle {
+        text-align: start;
+    }
+    .teasers section{
+        margin-bottom: 6rem;
+        
+    }
+    .teasers h2{
+        letter-spacing: .2rem;
+        margin-bottom: 1rem;
+    }
+    .teasers p {
+        margin-bottom: 0.8rem;
+    }
+    
+}
+    
+
+/* ANIMATIONS */
