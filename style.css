@@ -134,6 +134,20 @@ nav ul li a,
     nav.dropdown{
         display: flex;
     }
+
+    .icon.dropdown span:nth-child(1){
+        transform: translateY(4px) rotate(45deg);
+      }
+    .icon.dropdown span:nth-child(3){
+        transform: translateY(-4px) rotate(-45deg);
+    }
+    .icon.dropdown span:nth-child(2){
+        opacity: 0;
+      }
+
+    .logo {
+        margin-left: 0;
+    }
     .intro .content {
         text-align: start;
     }
