@@ -66,10 +66,26 @@ nav ul li a,
 .logo {
     text-decoration: none;
     margin: 1rem 2rem;
+    position: relative;
 }
-.hamburger {
+header nav ul li a::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+	background: var(--black);
+}
+.hamburger,
+.logo{
+    font-weight: bold;
+}
+
+.hamburger,
+.button {
     background-color: var(--white);
-    border: 2px solid var(--black);
+    border: none;
     padding: 0.2rem .5rem;
     display: flex;
     justify-content: center;
@@ -88,10 +104,13 @@ nav ul li a,
     margin-top: 2rem;
     margin-bottom: 6rem;
 }
-.intro .content h1 {
+.intro .content h1,
+.logo {
     text-transform: uppercase;
 }
-
+.limited {
+    margin-bottom: 6rem;
+}
 
 
 
