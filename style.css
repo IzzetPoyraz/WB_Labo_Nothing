@@ -79,6 +79,7 @@ nav ul li a,
 }
 header nav ul li a::after {
     position: absolute;
+    display: block;
     content: "";
     height: 2px;
     bottom: -4px;
