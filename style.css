@@ -77,7 +77,10 @@ nav ul li a,
     width: 30%;
 	background: var(--black);
 }
-header nav ul li a::after {
+header a {
+    position: relative;
+}
+header a::after {
     position: absolute;
     display: block;
     content: "";
@@ -86,6 +89,15 @@ header nav ul li a::after {
     left: 0;
     width: 100%;
 	background: var(--black);
+}
+header nav ul li a::before{
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border: solid 2px var(--black);
+    transform: rotate(45deg);
 }
 .hamburger,
 .logo{
