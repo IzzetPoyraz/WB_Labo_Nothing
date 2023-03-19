@@ -68,6 +68,15 @@ nav ul li a,
     margin: 1rem 2rem;
     position: relative;
 }
+.logo::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    width: 30%;
+	background: var(--black);
+}
 header nav ul li a::after {
     position: absolute;
     content: "";
