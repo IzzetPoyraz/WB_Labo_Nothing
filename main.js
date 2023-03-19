@@ -1,11 +1,6 @@
-'use strict';
+const toggle = document.getElementsByTagName('nav')[0];
+const hm = document.getElementsByClassName('hamburger')[0];
 
-
-(function () {
-    const Hamburger = document.querySelector('.hamburger');
-
-    Hamburger.addEventListener('click', () =>{  
-        Hamburger.classList.toggle('dropdown');
-    })
-  })();
-
+hm.addEventListener('click', () => {
+    toggle.classList.toggle('dropdown');
+} )

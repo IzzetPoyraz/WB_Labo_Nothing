@@ -101,19 +101,18 @@ nav ul li a,
 /* BREAKPOINTS */
 @media(max-width:750px){
     .icon span{
-        display: block;
         width: 15px;
         height: 2px;
         margin: 2px auto;
-        -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
         background-color: black;
       }
     .hamburger {
-        display: inline;
         display: flex;
-        gap: 1rem;
+        gap: .8rem;
+        cursor: pointer;
     }
+
     nav ul,
     nav ul li a {
         display: block;
@@ -130,17 +129,16 @@ nav ul li a,
         width: 100%;
     }
     nav {
-        margin-top: -150%;
+        display: none;
     }
-    nav.dropdown {
-        margin-top: 0;
+    nav.dropdown{
+        display: flex;
     }
-
     .intro .content {
         text-align: start;
     }
     .subtitle {
-        text-align: start;
+        text-align: start; 
     }
     .teasers section{
         margin-bottom: 6rem;
