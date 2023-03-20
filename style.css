@@ -158,7 +158,9 @@ header nav ul li a::before{
 #more.flex {
     display: none;
 }
-
+.teasers h2 {
+    text-transform: uppercase;
+}
 /* FOOTER */
 
 /* BREAKPOINTS */
