@@ -1,3 +1,5 @@
+'use strict';
+
 const toggle = document.getElementsByTagName('nav')[0];
 const hm = document.getElementsByClassName('hamburger')[0];
 const icon = document.getElementsByClassName('icon')[0];
