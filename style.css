@@ -104,14 +104,22 @@ header nav ul li a::before{
     font-weight: bold;
 }
 
-.hamburger,
-.button {
+.hamburger{
     background-color: var(--white);
     border: none;
     padding: 0.2rem .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.button {
+    background-color: var(--white);
+    border: solid 0.125rem var(--black);
+    padding: 0.2rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .icon span {
     display: block;
@@ -133,9 +141,23 @@ header nav ul li a::before{
 .limited {
     margin-bottom: 6rem;
 }
+#less {
+    display: none;
+}
 
+.gallery *:not(:nth-child(1)){
+    display: none;
+}
 
-
+.gallery.flex *:not(:nth-child(1)){
+    display: inline;
+}
+#less.flex{
+    display: inline;
+}
+#more.flex {
+    display: none;
+}
 
 /* FOOTER */
 
