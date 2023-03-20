@@ -40,6 +40,7 @@ img {
 .hamburger {
     display: none;
 }
+
 /* HEADER */
 header a{
     color: var(--black);
@@ -98,6 +99,12 @@ header nav ul li a::before{
     margin-right: 10px;
     border: solid 2px var(--black);
     transform: rotate(45deg);
+    
+}
+header nav ul li a:hover::before{
+    background-color: var(--black);
+    transform: rotate(0deg);
+    transition: 0.2s;
 }
 .hamburger,
 .logo{
@@ -176,8 +183,8 @@ header nav ul li a::before{
         display: flex;
         gap: .8rem;
         cursor: pointer;
+        
     }
-
     nav ul,
     nav ul li a {
         display: block;
@@ -192,12 +199,14 @@ header nav ul li a::before{
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
+        
     }
     nav {
         display: none;
     }
-    nav.dropdown{
+    nav.dropdown {
         display: flex;
+        animation: ShowDown 0.4s;
     }
 
     .icon.dropdown span:nth-child(1){
@@ -235,3 +244,12 @@ header nav ul li a::before{
     
 
 /* ANIMATIONS */
+@keyframes ShowDown {
+    from {
+      transform: translateX(-20%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
