@@ -29,7 +29,7 @@ figure, body, p {
 }
 .container{
     max-width: 120rem;
-    margin: 2rem 2rem;
+    margin: 2rem 4rem;
 }
 p{
     max-width: 40em;
@@ -147,17 +147,24 @@ header nav ul li a:hover::before{
 .teasers {
     display: flex;
     max-width: 100%;
-    gap: 2rem;
-    
+    gap: 2rem;  
 }
 .teasers section{
-    width: 50%;
+    max-width: 50%;
 }
 .teasers figure {
     max-width: 100%;
-    
+}
+.teasers h2,
+.teasers p {
+    margin-bottom: 1rem;
+}
+.teasers img {
+    width: 100%;
+    object-fit: cover;
 }
 .limited {
+    margin: 0 auto;
     margin-bottom: 6rem;
 }
 #less {
