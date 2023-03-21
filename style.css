@@ -39,6 +39,7 @@ img {
     aspect-ratio: 8/5;
     object-fit: cover;
 }
+
 .hamburger {
     display: none;
 }
@@ -71,7 +72,7 @@ nav ul li {
 nav ul li a,
 .logo {
     text-decoration: none;
-    margin: 1rem 2rem;
+    margin: 2rem 2rem;
     position: relative;
 }
 .logo::after {
@@ -145,13 +146,12 @@ header nav ul li a:hover::before{
 }
 .teasers {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     gap: 2rem;
     
 }
 .teasers section{
-    max-width: 50%;
-    overflow: hidden;
+    width: 50%;
 }
 .teasers figure {
     max-width: 100%;
@@ -247,7 +247,11 @@ footer {
     }
     .icon.dropdown span:nth-child(2){
         opacity: 0;
-      }
+    }
+
+    .gallery *:not(:nth-child(1)){
+        display: none;
+    }
 
     .logo {
         margin-left: 0;
@@ -263,6 +267,7 @@ footer {
     }
     .teasers section{
         margin-bottom: 6rem;
+        width: 100%;
         
     }
     .teasers h2{
