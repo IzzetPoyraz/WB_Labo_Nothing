@@ -25,6 +25,7 @@ html {
 /* UTILITY CLASSES, ATOMS...*/
 figure, body, p {
     margin: 0;
+    padding: 0;
 }
 .container{
     max-width: 120rem;
@@ -135,9 +136,26 @@ header nav ul li a:hover::before{
     margin-top: 2rem;
     margin-bottom: 6rem;
 }
+.intro figure {
+    text-align: center;
+}
 .intro .content h1,
 .logo {
     text-transform: uppercase;
+}
+.teasers {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    
+}
+.teasers section{
+    max-width: 50%;
+    overflow: hidden;
+}
+.teasers figure {
+    max-width: 100%;
+    
 }
 .limited {
     margin-bottom: 6rem;
@@ -146,7 +164,14 @@ header nav ul li a:hover::before{
     display: none;
 }
 
-.gallery *:not(:nth-child(1)){
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.gallery img:nth-child(n+3){
     display: none;
 }
 
@@ -163,6 +188,17 @@ header nav ul li a:hover::before{
     text-transform: uppercase;
 }
 /* FOOTER */
+footer {
+    margin-bottom: 1rem;
+    position: relative;
+}
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--primary);
+}
 
 /* BREAKPOINTS */
 @media(max-width:750px){
