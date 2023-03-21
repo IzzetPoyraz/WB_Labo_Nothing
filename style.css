@@ -17,6 +17,7 @@
 
 html {
     background-color: var(--bg);
+    color: var(--primary);
     font-family: 'Josefin Sans', sans-serif;
     color: var(--primary)
 }
@@ -40,13 +41,16 @@ img {
 .hamburger {
     display: none;
 }
+span {
+    color: var(--primary);
+}
 
 /* HEADER */
 header a{
     color: var(--black);
 }
 header a::after {
-    width: #000 30%;
+    width: var(--black) 30%;
 }
 .content{
     text-align: center;
@@ -80,16 +84,6 @@ nav ul li a,
 }
 header a {
     position: relative;
-}
-header a::after {
-    position: absolute;
-    display: block;
-    content: "";
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-	background: var(--black);
 }
 header nav ul li a::before{
     display: inline-block;
@@ -177,7 +171,7 @@ header nav ul li a:hover::before{
         height: 2px;
         margin: 2px auto;
         transition: all 0.3s ease;
-        background-color: black;
+        background-color: var(--black);
       }
     .hamburger {
         display: flex;
@@ -241,7 +235,16 @@ header nav ul li a:hover::before{
     }
     
 }
-    
+
+@media (prefers-color-scheme: dark) {
+    :root{
+    --white: #010111;
+    --black: #f4f6f6;
+    --primary: var(--black);
+    --bg: var(--white);
+}
+
+}
 
 /* ANIMATIONS */
 @keyframes ShowDown {
