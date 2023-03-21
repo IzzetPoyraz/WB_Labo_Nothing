@@ -258,6 +258,9 @@ footer {
     .subtitle {
         text-align: start; 
     }
+    .teasers {
+        display: block;
+    }
     .teasers section{
         margin-bottom: 6rem;
         
